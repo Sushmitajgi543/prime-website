@@ -33,7 +33,11 @@
     }
     
     #first{
+
+        @include mediaMd{
+            
         display: none;
+        }
     }
     &-container{
         display: flex;
