@@ -467,11 +467,14 @@
     }
 
     @include mediaMd{
-        height: 100vh;
+        height: 85vh;
+        padding-bottom: 1rem;
     }
 
     @include mediaS{
-        height: 100vh;
+        height: 75vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     &-left{
         width: 10%;
@@ -479,11 +482,11 @@
         padding: 7rem 0;
 
         @include mediaMd{
-            padding: 4.5rem 0;
+           display: none;
         }
 
         @include mediaS{
-            padding: 4.5rem 0;
+            display: none;
         }
         
         div{
@@ -512,10 +515,12 @@
         }
 
         @include mediaMd{
+            width: 100%;
             padding: 4rem 2rem;
         }
 
         @include mediaS{
+            width: 100%;
             padding: 4rem 2rem;
         }
         h1{
@@ -531,10 +536,11 @@
             }
 
             @include mediaMd{
+                padding: 0;
                 font-size: 2rem;
             }
-
             @include mediaS{
+                padding: 0;
                 font-size: 1.5rem;
             }
         }
@@ -543,6 +549,16 @@
             padding: 1rem 0;
             display: flex;
             height: 100%;
+
+            @include mediaMd{
+              padding-bottom: 1rem;
+              height: auto;
+            }
+
+            @include mediaS{
+              padding-bottom: 1rem;
+              height: auto;
+            }
             
             div{
                 width: 35%;
@@ -554,6 +570,14 @@
                 flex-direction: column;
                 
                 @include mediaL{
+                    padding: 0;
+                }
+
+                @include mediaMd{
+                    padding: 0;
+                }
+
+                @include mediaS{
                     padding: 0;
                 }
                 h1{
@@ -604,6 +628,14 @@
         width: 10%;
         height: 100%;
         padding: 7rem 0;
+
+        @include mediaMd{
+           display: none;
+        }
+
+        @include mediaS{
+            display: none;
+        }
         
         div{
             width: 100%;
@@ -636,6 +668,11 @@
     @include mediaMd{
         height: 21.5vh;
        background-size: contain;
+    }
+
+    @include mediaS{
+        height: 18vh;
+        background-size: contain;
     }
 
 
