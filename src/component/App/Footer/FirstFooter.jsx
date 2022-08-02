@@ -1,6 +1,7 @@
 import React from 'react';
 import "../../Assest/Scss/Footer/index.scss"
 import pattern from "../../Assest/Image/pattern.png";
+import { Link } from 'react-router-dom';
 export const FirstFooter = () => {
     return (
         <div className='seven-section'>
@@ -12,7 +13,7 @@ export const FirstFooter = () => {
 build a new home with us?</h1>
             </div>
             <div className='seven-section-container 3rd'>
-               <button type='button'> Let's Chat</button>
+            <Link to="/contact-us"><button type='button'> Let's Chat</button></Link>
             </div>
         </div>
     )

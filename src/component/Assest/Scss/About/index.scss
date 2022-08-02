@@ -13,10 +13,16 @@
 
     @include mediaL{
         height: 60vh;
-        background-size: contain;
+        background-size: cover;
     }
 
     @include mediaMd{
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    @include mediaS{
         height: 60vh;
         background-size: cover;
         background-position: center;
@@ -30,6 +36,10 @@
         @include mediaMd{
             display: none;
         }
+
+        @include mediaS{
+            display: none;
+        }
     }
     &-right {
         width: 50%;
@@ -41,6 +51,11 @@
         align-items: center;
 
         @include mediaMd{
+            width: 100%;align-items: center;
+            padding-top: 2rem;
+        }
+
+        @include mediaS{
             width: 100%;align-items: center;
             padding-top: 2rem;
         }
@@ -59,6 +74,10 @@
             @include mediaMd{
                 font-size: 3rem;
             }
+
+            @include mediaS{
+                font-size: 3rem;
+            }
             span{
                  
                 img{
@@ -71,6 +90,11 @@
                     }
 
                     @include mediaMd{
+                        width: 7%;
+                        height: 25%;
+                    }
+
+                    @include mediaS{
                         width: 7%;
                         height: 25%;
                     }
@@ -110,10 +134,20 @@
         flex-direction: column;
     }
 
+    @include mediaS{
+        padding: 0 1rem 0 1rem;
+        height: 120vh;
+        flex-direction: column;
+    }
+
     &-content {
         display: flex;
 
         @include mediaMd{
+            flex-direction: column;
+        }
+
+        @include mediaS{
             flex-direction: column;
         }
         div {
@@ -134,6 +168,12 @@
             }
 
             @include mediaMd{
+                width: 100%;
+                height: 50vh;
+                padding: 0rem 1rem;
+            }
+
+            @include mediaS{
                 width: 100%;
                 height: 50vh;
                 padding: 0rem 1rem;
@@ -164,6 +204,11 @@
                     font-size: 1rem;
                     margin-top: -2rem;
                 }
+
+                @include mediaS{
+                    font-size: 1rem;
+                    margin-top: -2rem;
+                }
             }
             h1 {
                 text-align: left;
@@ -180,6 +225,10 @@
                 }
 
                 @include mediaMd{
+                    font-size: 2.5rem;
+                }
+
+                @include mediaS{
                     font-size: 2.5rem;
                 }
             }
@@ -204,6 +253,14 @@
                 @include mediaMd{
                     display: none;
                     
+                }
+
+                @include mediaS{
+                    display: none;
+                    width: 100%;
+                    line-height: 1.5;
+                    font-size: 0.5rem;
+                    padding: 0;
                 }
             }
         }
@@ -233,6 +290,10 @@
         height: 50vh;
     }
 
+    @include mediaS{
+        height: 50vh;
+    }
+
     &-left {
         width: 75%;
         height: 100%;
@@ -249,6 +310,12 @@
         }
 
         @include mediaMd{
+            width: 100%;
+            height: 100%;
+            padding: 0rem 1rem;
+        }
+
+        @include mediaS{
             width: 100%;
             height: 100%;
             padding: 0rem 1rem;
@@ -271,6 +338,10 @@
             @include mediaMd{
                 font-size: 2.5rem;
             }
+
+            @include mediaS{
+                font-size: 2.5rem;
+            }
         }
         p {
             font-size: 2.5rem;
@@ -287,6 +358,11 @@
             }
 
             @include mediaMd{
+                font-size: 1.5rem;
+                padding: 0 1rem 0 1rem;
+            }
+
+            @include mediaS{
                 font-size: 1.5rem;
                 padding: 0 1rem 0 1rem;
             }
@@ -327,6 +403,11 @@
         height: 120vh;
         padding-bottom: 0;
     }
+
+    @include mediaS{
+        height: 120vh;
+        padding-bottom: 0;
+    }
     h1 {
         padding-left: 7rem;
         font-size: 3.5rem;
@@ -344,6 +425,12 @@
         }
 
         @include mediaMd{
+            padding-left: 1rem;
+            padding-bottom: 0;
+            font-size: 2.5rem;
+        }
+
+        @include mediaS{
             padding-left: 1rem;
             padding-bottom: 0;
             font-size: 2.5rem;
@@ -366,6 +453,12 @@
             flex-direction: column-reverse;
         }
 
+        @include mediaS{
+            height: 100vh;
+            padding: 0 1rem;
+            flex-direction: column-reverse;
+        }
+
         &-left {
             width: 10%;
             height: 100%;
@@ -378,6 +471,10 @@
             }
 
             @include mediaMd{
+                display: none;
+            }
+
+            @include mediaS{
                 display: none;
             }
             div{
@@ -398,6 +495,12 @@
                 height: auto;
             }
 
+
+            @include mediaS{
+                width: 100%;
+                padding: 2rem 0;
+                height: auto;
+            }
             &-1,&-2,&-3,&-4{
                 display: flex;
                 justify-content: flex-start;
@@ -409,6 +512,10 @@
                 }
 
                 @include mediaMd{
+                    padding-bottom: 1rem;
+                }
+
+                @include mediaS{
                     padding-bottom: 1rem;
                 }
                 span{
@@ -431,6 +538,11 @@
                         padding-left: 1rem;
                         font-size: 1.5rem;
                     }
+
+                    @include mediaS{
+                        padding-left: 1rem;
+                        font-size: 1.5rem;
+                    }
                 }
 
                 div{
@@ -446,6 +558,10 @@
                     }
 
                     @include mediaMd{
+                        padding: 0 1rem 0 1em;
+                    }
+
+                    @include mediaS{
                         padding: 0 1rem 0 1em;
                     }
 
@@ -467,6 +583,10 @@
                         @include mediaMd{
                             font-size: 1.5rem;
                         }
+
+                        @include mediaS{
+                            font-size: 1.5rem;
+                        }
                     }
                     p{
                         font-size: .8rem;
@@ -482,6 +602,10 @@
                         }
 
                         @include mediaMd{
+                            font-size: .7rem;
+                        }
+
+                        @include mediaS{
                             font-size: .7rem;
                         }
                     }
@@ -503,6 +627,12 @@
             }
 
             @include mediaMd{
+                width: 100%;
+                height:50vh;
+                background-size: cover;
+            }
+
+            @include mediaS{
                 width: 100%;
                 height:50vh;
                 background-size: cover;
@@ -535,6 +665,11 @@
         height: 90vh;
         padding-bottom: 0;
     }
+
+    @include mediaS{
+        height: 90vh;
+        padding-bottom: 0;
+    }
     h1 {
         padding-left: 7rem;
         font-size: 3.5rem;
@@ -552,6 +687,13 @@
         }
 
         @include mediaMd{
+            padding-left: 1rem;
+            padding-bottom: 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        @include mediaS{
             padding-left: 1rem;
             padding-bottom: 0;
             text-align: center;
@@ -577,6 +719,13 @@
             justify-content: space-around;
         }
 
+        @include mediaS{
+            padding: 2rem 1rem;
+            flex-direction: column;
+            height: 70vh;
+            justify-content: space-around;
+        }
+
         div {
             width: 25%;
             height: 100%;
@@ -587,7 +736,12 @@
             justify-content: center;
 
             @include mediaMd{
-                width: 10   0%;
+                width: 100%;
+                border-right: none;
+            }
+
+            @include mediaS{
+                width: 100%;
                 border-right: none;
             }
 
@@ -621,6 +775,10 @@
                 }
 
                 @include mediaMd{
+                    font-size: 1.5rem;
+                }
+
+                @include mediaS{
                     font-size: 1.5rem;
                 }
             }

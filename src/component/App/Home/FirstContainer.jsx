@@ -6,7 +6,7 @@ export const FirstContainer = () => {
         <div className='hero-section'>
             <div className='hero-section-text'>
                 <div>
-                <img src={logo} alt="" />
+                <Link to="/"><img src={logo} alt="" /></Link>
                 </div>
                 <h1>We Bulid Great Homes</h1>
             </div>
@@ -14,7 +14,7 @@ export const FirstContainer = () => {
                 <hr />
                 <div className='hero-section-menu-para'>
                 <p>
-                        We build great homes. <br />Do you have a project to discuss? let's talk. &rarr;
+                        We build great homes. <br />Do you have a project to discuss? let's talk. <Link to="/contact-us">&rarr;</Link>
                     </p>
                 <div className='hero-section-menu-para-item'>
                     <ul>

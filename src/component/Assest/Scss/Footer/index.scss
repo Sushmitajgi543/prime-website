@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    font-family:"Assistant Regular", "Open Sans",
         "Helvetica Neue", sans-serif;
     padding: 0;
     margin: 0;
@@ -31,12 +31,24 @@
         justify-content: center;
         align-items: center;
     }
+
+    @include mediaS{
+        height: 40vh;
+        padding-top: 2rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     #first{
 
         @include mediaMd{
             
         display: none;
+        }
+
+        @include mediaS{
+            display: none;
         }
     }
     &-container{
@@ -57,6 +69,12 @@
             height: auto;
             align-items: center;
         }
+
+        @include mediaS{
+            width: 100%;
+            height: auto;
+            align-items: center;
+        }
         img{
             width: 80%;
             height: 100%;
@@ -69,6 +87,11 @@
 
             
             @include mediaMd{
+                text-align: center;
+                font-size: 2.2rem;
+            }
+
+            @include mediaS{
                 text-align: center;
                 font-size: 2.2rem;
             }
@@ -87,6 +110,11 @@
             }
 
             @include mediaMd{
+                margin-left: 1rem;
+                padding: 1rem 2rem;
+            }
+
+            @include mediaS{
                 margin-left: 1rem;
                 padding: 1rem 2rem;
             }
@@ -122,6 +150,12 @@
         height: 45vh;
         flex-direction: column;
     }
+
+    @include mediaS{
+        padding: 0 2rem 0 2rem;
+        height: 45vh;
+        flex-direction: column;
+    }
     &-container{
         display: flex;
         flex-direction: column;
@@ -137,6 +171,10 @@
         }
 
         @include mediaMd{
+            width: 100%;
+        }
+
+        @include mediaS{
             width: 100%;
         }
 .logo{
@@ -162,6 +200,10 @@
                 @include mediaMd{
                     padding-right: .5rem;
                 }
+
+                @include mediaS{
+                    padding-right: .5rem;
+                }
             }
         }
         h1{
@@ -175,6 +217,10 @@
             }
 
             @include mediaMd{
+                font-size: 2.2rem;
+            }
+
+            @include mediaS{
                 font-size: 2.2rem;
             }
         }

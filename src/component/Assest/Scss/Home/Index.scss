@@ -27,6 +27,10 @@
     @include mediaMd {
         height: 80vh;
     }
+
+    @include mediaS {
+        height: 70vh;
+    }
     
     &-text {
         color: rgb(255, 255, 255);
@@ -53,6 +57,10 @@
         @include mediaMd {
             padding: 2rem 1rem 4rem 1rem;
         }
+
+        @include mediaS {
+            padding: 2rem 1rem 4rem 1rem;
+        }
         div {
             width: 33%;
             height: 7%;
@@ -67,6 +75,11 @@
 
             @include mediaMd {
                 width: 70%;
+                height: 7%;
+            }
+
+            @include mediaS {
+                width: 100%;
                 height: 7%;
             }
             img {
@@ -86,6 +99,10 @@
             }
             @include mediaMd {
                 font-size: 3rem;
+            }
+
+            @include mediaS {
+                font-size: 2rem;
             }
         }
     }
@@ -109,6 +126,11 @@
             padding: 1.5rem 1rem 4rem 1rem;
         }
 
+
+        @include mediaS {
+            padding: 1.5rem 1rem 4rem 1rem;
+        }
+
         hr {
             color: rgb(255, 255, 255);
             width: 100%;
@@ -127,6 +149,11 @@
                 flex-direction: column-reverse;
                 padding: 0 0rem 0 0rem;
             }
+
+            @include mediaS {
+                flex-direction: column-reverse;
+                padding: 0 0rem 0 0rem;
+            }
             p {
                 color: rgb(255, 255, 255);
                 font-size: 0.8rem;
@@ -134,10 +161,23 @@
                 text-align: left;
                 font-family: sans-serif;
 
+                a{
+                    color: rgb(255, 255, 255);
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    font-weight: 400;
+                    text-align: left;
+                    font-family: sans-serif;
+                }
                 @include mediaL {
                     font-size: 1rem;
                     padding-top: 3rem;
 
+                }
+
+                @include mediaMd {
+                    font-size: 0.8rem;
+                    padding-top: 2rem;
                 }
             }
             &-item {
@@ -150,6 +190,11 @@
                     padding: 0;
                 }
                 @include mediaMd {
+                    padding: 0;
+                    padding-bottom: 5rem;
+                }
+
+                @include mediaS {
                     padding: 0;
                     padding-bottom: 5rem;
                 }
@@ -168,6 +213,10 @@
                         padding: 0.3rem 0.5rem;
                 
                         @include mediaMd {
+                            padding: 0.3rem 0rem;
+                        }
+
+                        @include mediaS {
                             padding: 0.3rem 0rem;
                         }
 
@@ -216,6 +265,11 @@
         padding: 0 1rem;
     }
 
+    @include mediaS {
+        height: 120vh;
+        padding: 0 1rem;
+    }
+
     h1 {
         font-size: 3.5rem;
         font-weight: 600;
@@ -233,6 +287,10 @@
         @include mediaMd {
             font-size: 2rem;
         }
+
+        @include mediaS {
+            font-size: 1.5rem;
+        }
     }
 
     &-content {
@@ -247,6 +305,13 @@
         }
 
         @include mediaMd {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        @include mediaS {
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -270,6 +335,11 @@
             }
 
             @include mediaMd {
+                width: 100%;
+                padding: 0;
+            }
+
+            @include mediaS {
                 width: 100%;
                 padding: 0;
             }
@@ -304,6 +374,11 @@
                     padding: 0;
                     font-size: 1.5rem;
                 }
+
+                @include mediaMd {
+                    padding: 0;
+                    font-size: 1.5rem;
+                }
             }
             a {
                 color: rgb(6, 6, 6);
@@ -327,6 +402,11 @@
             padding: 0 1rem;
             padding-bottom: 2rem;
         }
+
+        @include mediaS {
+            padding: 0 1rem;
+            padding-bottom: 2rem;
+        }
     }
 
     .second-section-content-2 {
@@ -336,6 +416,11 @@
             padding: 0 1rem 0;
         }
         @include mediaMd {
+            padding: 0 1rem;
+            padding-bottom: 2rem;
+        }
+
+        @include mediaS {
             padding: 0 1rem;
             padding-bottom: 2rem;
         }
@@ -368,6 +453,11 @@
         padding: 0 1rem;
     }
 
+    @include mediaS {
+        height: 40vh;
+        padding: 0 1rem;
+    }
+
     &-container {
         position: absolute;
         top: 0;
@@ -380,6 +470,12 @@
         height: 100%;
 
         @include mediaMd {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include mediaS {
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -405,6 +501,12 @@
                 padding-left: 2rem;
             }
 
+            @include mediaS {
+                width: 100%;
+                align-items: center;
+                padding-left: 0rem;
+            }
+
             h1 {
                 font-size: 6rem;
                 color: rgb(237, 231, 231);
@@ -424,6 +526,12 @@
                     text-align: left;
                     line-height: 1;
                     font-size: 3rem;
+                }
+
+                @include mediaS {
+                    text-align: left;
+                    line-height: 1;
+                    font-size: 2rem;
                 }
             }
         }
@@ -446,6 +554,12 @@
                 align-items: center;
                 padding: 0 1rem 2rem 0;
             }
+
+            @include mediaS {
+                width: 100%;
+                align-items: center;
+                padding: 0 1rem 2.5rem 0;
+            }
             h3 {
                 color: rgb(253, 253, 253);
                 text-align: left;
@@ -456,6 +570,11 @@
                 }
 
                 @include mediaMd {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+
+                @include mediaS {
                     font-size: 1.2rem;
                     text-align: center;
                 }
@@ -493,6 +612,11 @@
         padding:3rem 0 0 1rem;
     }
 
+    @include mediaS {
+        height: 130vh;
+        padding: 5rem 0 0 1rem;
+    }
+
     h1 {
         font-size: 3.5rem;
         font-weight: 600;
@@ -510,6 +634,10 @@
         @include mediaMd {
             font-size: 2rem;
         }
+
+        @include mediaS {
+            font-size: 1.5rem;
+        }
     }
     section {
         display: flex;
@@ -522,6 +650,11 @@
         @include mediaMd {
             flex-direction: column;
             height: 120vh;
+        }
+
+        @include mediaS {
+            flex-direction: column;
+            height: 100vh;
         }
     }
     &-left {
@@ -536,6 +669,12 @@
             padding: 0;
         }
         @include mediaMd {
+            width: 100%;
+            align-items: center;
+            padding: 0 1rem 0 0;
+        }
+
+        @include mediaS {
             width: 100%;
             align-items: center;
             padding: 0 1rem 0 0;
@@ -563,6 +702,10 @@
                     @include mediaMd {
                         padding: 0.5rem 1rem 0 1rem;
                     }
+
+                    @include mediaS {
+                        padding: 0.5rem 1rem 0 1rem;
+                    }
                     div {
                         width: 20%;
                         padding-bottom: 1rem;
@@ -571,6 +714,10 @@
                             width: 15%;
                         }
                         @include mediaMd {
+                            width: 25%;
+                        }
+
+                        @include mediaS {
                             width: 25%;
                         }
                     }
@@ -609,6 +756,13 @@
         @include mediaMd {
             width: 100%;
             height: 80vh;
+            align-items: center;
+            padding: 0 1rem 0 0;
+        }
+
+        @include mediaS {
+            width: 100%;
+            height: 100vh;
             align-items: center;
             padding: 0 1rem 0 0;
         }
@@ -653,6 +807,11 @@
         padding: 0 1rem;
     }
 
+    @include mediaS {
+        height: 60vh;
+        padding: 0 1rem;
+    }
+
     &-container {
         position: absolute;
         top: 0;
@@ -671,6 +830,11 @@
         }
 
         @include mediaMd {
+            padding: 0 1rem;
+            flex-direction: column;
+        }
+
+        @include mediaS {
             padding: 0 1rem;
             flex-direction: column;
         }
@@ -697,6 +861,12 @@
                 padding: 0;
             }
 
+            @include mediaS {
+                width: 100%;
+                height: 50%;
+                padding: 0;
+            }
+
             h1 {
                 font-size: 6rem;
                 color: rgb(237, 231, 231);
@@ -716,6 +886,12 @@
                     text-align: center;
                     line-height: 1;
                     font-size: 4rem;
+                }
+
+                @include mediaS {
+                    text-align: center;
+                    line-height: 1;
+                    font-size: 3.5rem;
                 }
             }
         }
@@ -742,6 +918,13 @@
                 height: 50%;
             }
 
+            @include mediaS {
+                width: 100%;
+                padding: 0;
+                align-items: center;
+                height: 50%;
+            }
+
             h1 {
                 color: rgb(253, 254, 255);
                 text-align: right;
@@ -756,6 +939,11 @@
                 @include mediaMd {
                     text-align: center;
                     font-size: 4.5rem;
+                }
+
+                @include mediaS {
+                    text-align: center;
+                    font-size: 5rem;
                 }
             }
         }
@@ -789,6 +977,11 @@
         padding: 0 1rem;
     }
 
+    @include mediaS {
+        height: 80vh;
+        padding: 0 1rem;
+    }
+
     h1 {
         font-size: 3.5rem;
         font-weight: 600;
@@ -806,6 +999,10 @@
         @include mediaMd {
             font-size: 2rem;
         }
+
+        @include mediaS {
+            font-size: 1.5rem;
+        }
     }
 
     &-content {
@@ -815,6 +1012,9 @@
             flex-direction: column;
         }
         
+        @include mediaS {
+            flex-direction: column;
+        }
         &-left,
         &-right {
             width: 50%;
@@ -832,7 +1032,12 @@
                 padding: 0;
                 width: 100%;
             }
-           
+
+            @include mediaS {
+                padding: 0;
+                width: 100%;
+            }
+    
             span {
                 width: 25%;
                 padding: 0 1rem;
@@ -851,6 +1056,14 @@
 
                 @include mediaL {
                     padding-top: 2rem;
+                }
+
+                @include mediaMd {
+                    padding-top: 1rem;
+                }
+
+                @include mediaS {
+                    padding-top: 1rem;
                 }
                 p {
                     font-size: 0.8rem;
@@ -877,6 +1090,10 @@
         @include mediaMd {
             padding-right: 0;
         }
+
+        @include mediaS {
+            padding-right: 0;
+        }
     }
     .sixth-section-content-right {
         border-left: 1px solid grey;
@@ -889,6 +1106,12 @@
         }
 
         @include mediaMd {
+            border: none;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        @include mediaS {
             border: none;
             padding-right: 0;
             padding-left: 0;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const ThirdSection = () => {
     return (
@@ -12,7 +13,7 @@ export const ThirdSection = () => {
 about quality. We are guided by the
 conviction that our customers must
 be happy and satisfied.</h3>
-                    <a href="">Explore More&nbsp; &rarr;</a>
+<Link to="/about-us">Explore More&nbsp; &rarr;</Link>
                 </div>
             </div>
         </div>
