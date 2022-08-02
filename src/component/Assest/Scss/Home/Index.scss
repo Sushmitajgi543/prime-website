@@ -1,0 +1,898 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+@import "mixin";
+
+// ---first conatiner------------------
+.hero-section {
+    background-image: url("../../Image/home-hero.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+    @include mediaL {
+        height: 90vh;
+    }
+    @include mediaMd {
+        height: 80vh;
+    }
+    
+    &-text {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 53%;
+        background-color: transparent;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 1.5;
+        z-index: 1;
+        padding: 5rem 5rem 8rem 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @include mediaL {
+            width: 100%;
+            padding: 5rem 4rem 6rem 4rem;
+        }
+
+        @include mediaMd {
+            padding: 2rem 1rem 4rem 1rem;
+        }
+        div {
+            width: 33%;
+            height: 7%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            @include mediaL {
+                width: 50%;
+                height: 7%;
+            }
+
+            @include mediaMd {
+                width: 70%;
+                height: 7%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        h1 {
+            font-size: 7rem;
+            font-weight: 400;
+            text-align: left;
+            text-transform: uppercase;
+            font-family: sans-serif;
+
+            @include mediaL {
+                font-size: 5rem;
+            }
+            @include mediaMd {
+                font-size: 3rem;
+            }
+        }
+    }
+
+    &-menu {
+        width: 47%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        padding-top: 4.5rem;
+        z-index: 2;
+
+        @include mediaL {
+            padding-top: 4rem;
+        }
+        @include mediaMd {
+
+
+            padding: 1.5rem 1rem 4rem 1rem;
+        }
+
+        hr {
+            color: rgb(255, 255, 255);
+            width: 100%;
+            opacity: 1;
+        }
+        &-para {
+            display: flex;
+            padding: 0 0rem 0 0rem;
+            justify-content: space-between;
+
+            @include mediaL {
+                flex-direction: column-reverse;
+                padding: 0 1rem 0 0rem;
+            }
+            @include mediaMd {
+                flex-direction: column-reverse;
+                padding: 0 0rem 0 0rem;
+            }
+            p {
+                color: rgb(255, 255, 255);
+                font-size: 0.8rem;
+                font-weight: 400;
+                text-align: left;
+                font-family: sans-serif;
+
+                @include mediaL {
+                    font-size: 1rem;
+                    padding-top: 3rem;
+
+                }
+            }
+            &-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                padding: 0 1rem;
+
+                @include mediaL {
+                    padding: 0;
+                }
+                @include mediaMd {
+                    padding: 0;
+                    padding-bottom: 5rem;
+                }
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+
+                    @include mediaL {
+                        flex-direction: row;
+                    }
+                    li {
+                        padding: 0.3rem 0.5rem;
+                
+                        @include mediaMd {
+                            padding: 0.3rem 0rem;
+                        }
+
+                        a {
+                            color: rgb(255, 255, 255);
+                            text-decoration: none;
+                            font-size: 0.9rem;
+                            text-transform: uppercase;
+                            font-weight: 0;
+                            letter-spacing: 0.6px;
+                            text-align: left;
+                            font-family: sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// first container end------------------------------------------------------------------
+
+// Second container start------------------------------------------------------------------
+
+.second-section {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    padding: 0 7rem;
+    padding-top: 1rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL {
+        height: 90vh;
+        padding: 0 4rem;
+    }
+
+    @include mediaMd {
+        height: 120vh;
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 2rem;
+        color: rgb(77, 115, 116);
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-family: sans-serif;
+
+        @include mediaL {
+            font-size: 2.5rem;
+        }
+
+        @include mediaMd {
+            font-size: 2rem;
+        }
+    }
+
+    &-content {
+        padding: 0 3rem;
+        display: flex;
+
+        @include mediaL {
+            // flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+
+        @include mediaMd {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+        }
+        &-1,
+        &-2 {
+            width: 50%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0rem 3rem;
+            justify-content: space-around;
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+
+
+            @include mediaL {
+                padding: 0;
+            }
+
+            @include mediaMd {
+                width: 100%;
+                padding: 0;
+            }
+            div {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-around;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    // object-position: center;
+                }
+            }
+
+            p {
+                font-size: 0.8rem;
+                padding-bottom: 0;
+                margin: 0;
+            }
+            h3 {
+                text-align: left;
+                padding: 0%;
+                margin: 0;
+                padding-right: 6rem;
+                font-size: 1.6rem;
+
+                @include mediaL {
+                    padding: 0;
+                    font-size: 1.5rem;
+                }
+            }
+            a {
+                color: rgb(6, 6, 6);
+                text-decoration: none;
+                font-size: 0.8rem;
+                font-weight: 0;
+                letter-spacing: 0.6px;
+                text-align: left;
+                font-family: sans-serif;
+            }
+        }
+    }
+    .second-section-content-1 {
+        padding: 0 5.5rem 0 3rem;
+
+        @include mediaL {
+            padding: 0 1rem 0;
+        }
+
+        @include mediaMd {
+            padding: 0 1rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    .second-section-content-2 {
+        padding: 0 3rem 0 5.5rem;
+
+        @include mediaL {
+            padding: 0 1rem 0;
+        }
+        @include mediaMd {
+            padding: 0 1rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
+// Second container end------------------------------------------------------------------
+
+// Third container start------------------------------------------------------------------
+
+.third-section {
+    background-image: url("../../Image/home-about.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 100%;
+    // padding: 0 14rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL {
+        height: 40vh;
+        padding: 0 4rem;
+    }
+
+    @include mediaMd {
+        height: 45vh;
+        padding: 0 1rem;
+    }
+
+    &-container {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        
+        width: 100%;
+        height: 100%;
+
+        @include mediaMd {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        &-left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            padding: 0rem 0rem 0 6rem;
+            justify-content: center;
+
+            @include mediaL {
+                align-items: center;
+                padding-left: 4rem;
+            }
+
+            @include mediaMd {
+                width: 100%;
+                align-items: center;
+                padding-left: 2rem;
+            }
+
+            h1 {
+                font-size: 6rem;
+                color: rgb(237, 231, 231);
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                line-height: 1.5;
+                font-family: sans-serif;
+
+                @include mediaL {
+                    text-align: left;
+                    line-height: 1;
+                    font-size: 4rem;
+                }
+
+                @include mediaMd {
+                    text-align: left;
+                    line-height: 1;
+                    font-size: 3rem;
+                }
+            }
+        }
+        &-right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0rem 7rem;
+            justify-content: center;
+
+            @include mediaL {
+                align-items: flex-start;
+                padding: 0 3rem 0 0;
+            }
+
+            @include mediaMd {
+                width: 100%;
+                align-items: center;
+                padding: 0 1rem 2rem 0;
+            }
+            h3 {
+                color: rgb(253, 253, 253);
+                text-align: left;
+
+                @include mediaL {
+                    font-size: 1.5rem;
+                    text-align: left;
+                }
+
+                @include mediaMd {
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+            a {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+            }
+        }
+    }
+}
+// Third container end------------------------------------------------------------------
+
+// Fourth container start------------------------------------------------------------------
+
+.fourth-section {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 5rem 0 0 7rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL {
+        height: 90vh;
+        padding: 5rem 0 0 4rem;
+    }
+    @include mediaMd {
+        height: 145vh;
+        padding:3rem 0 0 1rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 2rem;
+        color: rgb(77, 115, 116);
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-family: sans-serif;
+
+        @include mediaL {
+            font-size: 2.5rem;
+        }
+
+        @include mediaMd {
+            font-size: 2rem;
+        }
+    }
+    section {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+
+        @include mediaL {
+            height: 80vh;
+        }
+        @include mediaMd {
+            flex-direction: column;
+            height: 120vh;
+        }
+    }
+    &-left {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2rem 3rem 0 1rem;
+        justify-content: flex-start;
+
+        @include mediaL {
+            padding: 0;
+        }
+        @include mediaMd {
+            width: 100%;
+            align-items: center;
+            padding: 0 1rem 0 0;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-item1,
+            &-item2 {
+                display: flex;
+                align-items: flex-start;
+
+                &-box1,
+                &-box2 {
+                    padding: 1rem 2rem;
+                    width: 100%;
+                    color: rgb(63, 62, 62);
+
+                    @include mediaL {
+                        padding: 0.5rem 1rem 0 0;
+                    }
+                    @include mediaMd {
+                        padding: 0.5rem 1rem 0 1rem;
+                    }
+                    div {
+                        width: 20%;
+                        padding-bottom: 1rem;
+
+                        @include mediaL {
+                            width: 15%;
+                        }
+                        @include mediaMd {
+                            width: 25%;
+                        }
+                    }
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+                h4 {
+                    text-align: left;
+                    font-size: 1.2rem;
+                    letter-spacing: 0.6px;
+                }
+                p {
+                    text-align: left;
+                    font-size: 0.8rem;
+                    letter-spacing: 0.4px;
+                }
+            }
+        }
+    }
+
+    &-right {
+        width: 40%;
+        display: flex;
+        /* padding: 10rem 0; */
+        align-content: center;
+        justify-content: flex-end;
+
+        @include mediaL {
+            padding: 0;
+            justify-content: flex-end;
+        }
+
+        @include mediaMd {
+            width: 100%;
+            height: 80vh;
+            align-items: center;
+            padding: 0 1rem 0 0;
+        }
+
+        &-content {
+            width: 100%;
+            height: 80%;
+            background-image: url("../../Image/tree1.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Fourth container end------------------------------------------------------------------
+
+// Fifth container start------------------------------------------------------------------
+.fifth-section {
+    background-image: url("../../Image/coming-soon.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL {
+        height: 60vh;
+        padding: 0 4rem;
+    }
+
+    @include mediaMd {
+        height: 60vh;
+        padding: 0 1rem;
+    }
+
+    &-container {
+        position: absolute;
+        top: 0;
+        display: flex;
+
+        padding: 0 7rem;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        @include mediaL {
+            padding: 0 3rem;
+            flex-direction: column;
+        }
+
+        @include mediaMd {
+            padding: 0 1rem;
+            flex-direction: column;
+        }
+
+        &-left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            // padding: 0rem 4rem;
+            justify-content: center;
+
+            @include mediaL {
+                width: 100%;
+                height: 50%;
+                padding: 0;
+
+            }
+
+            @include mediaMd {
+                width: 100%;
+                height: 50%;
+                padding: 0;
+            }
+
+            h1 {
+                font-size: 6rem;
+                color: rgb(237, 231, 231);
+                font-weight: 400;
+                letter-spacing: 2px;
+                line-height: 1.5;
+                text-align: left;
+                font-family: sans-serif;
+
+                @include mediaL {
+                    text-align: center;
+                    line-height: 1;
+                    font-size: 5rem;
+                }
+
+                @include mediaMd {
+                    text-align: center;
+                    line-height: 1;
+                    font-size: 4rem;
+                }
+            }
+        }
+        &-right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            // padding: 0rem 4rem;
+            justify-content: center;
+            @include mediaL {
+                width: 100%;
+                padding: 0;
+                align-items: center;
+                height: 50%;
+
+            }
+
+            @include mediaMd {
+                width: 100%;
+                padding: 0;
+                align-items: center;
+                height: 50%;
+            }
+
+            h1 {
+                color: rgb(253, 254, 255);
+                text-align: right;
+                font-size: 7rem;
+                font-weight: 400;
+
+                @include mediaL {
+                    text-align: right;
+                    font-size: 5.5rem;
+                }
+
+                @include mediaMd {
+                    text-align: center;
+                    font-size: 4.5rem;
+                }
+            }
+        }
+    }
+}
+// Fifth container end------------------------------------------------------------------
+
+// Sixth container start------------------------------------------------------------------
+
+.sixth-section {
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    padding: 0 7rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL {
+        height: 70vh;
+        padding: 0 4rem;
+    }
+
+    @include mediaMd {
+        height: 80vh;
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 2rem;
+        color: rgb(77, 115, 116);
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-family: sans-serif;
+
+        @include mediaL {
+            font-size: 2.5rem;
+        }
+
+        @include mediaMd {
+            font-size: 2rem;
+        }
+    }
+
+    &-content {
+        display: flex;
+
+        @include mediaMd {
+            flex-direction: column;
+        }
+        
+        &-left,
+        &-right {
+            width: 50%;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            padding: 0rem 1rem;
+            justify-content: center;
+
+            @include mediaL {
+                padding: 0;
+            }
+
+            @include mediaMd {
+                padding: 0;
+                width: 100%;
+            }
+           
+            span {
+                width: 25%;
+                padding: 0 1rem;
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            div {
+                width: 80%;
+                padding-top: 3rem;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding-bottom: 1rem;
+
+                @include mediaL {
+                    padding-top: 2rem;
+                }
+                p {
+                    font-size: 0.8rem;
+                    padding-bottom: 0;
+                    font-weight: 550;
+                    margin: 0;
+                }
+                h3 {
+                    text-align: left;
+                    padding-bottom: 1rem;
+                    margin: 0;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    .sixth-section-content-left {
+        padding-right: 6rem;
+
+        @include mediaL {
+            padding-right: 1rem;
+        }
+
+        @include mediaMd {
+            padding-right: 0;
+        }
+    }
+    .sixth-section-content-right {
+        border-left: 1px solid grey;
+        padding-right: 1rem;
+        padding-left: 4rem;
+
+        @include mediaL {
+            padding-right: 1rem;
+            padding-left: 0;
+        }
+
+        @include mediaMd {
+            border: none;
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+}
+// Sixthcontainer end------------------------------------------------------------------

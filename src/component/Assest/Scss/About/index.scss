@@ -1,0 +1,632 @@
+@import "mixin" ;
+
+// First Sectuion start
+.first-section {
+    background-image: url("../../Image/about-hero.png");
+
+    height: 80vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+
+    @include mediaL{
+        height: 60vh;
+        background-size: contain;
+    }
+
+    @include mediaMd{
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    &-left {
+        width: 50%;
+        height: 100%;
+        display: flex;
+
+        @include mediaMd{
+            display: none;
+        }
+    }
+    &-right {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 10rem;
+        justify-content: center;
+        align-items: center;
+
+        @include mediaMd{
+            width: 100%;align-items: center;
+            padding-top: 2rem;
+        }
+        h1 {
+            font-size: 5.5rem;
+            color: #fff;
+            font-family: sans-serif;
+            width: 100%;
+            font-weight: 400;
+            margin-bottom: 20px;
+
+            @include mediaL{
+                font-size: 3rem;
+            }
+
+            @include mediaMd{
+                font-size: 3rem;
+            }
+            span{
+                 
+                img{
+                    width: 7%;
+                    height: 19%;
+                padding-bottom: 1rem;
+                    @include mediaL{
+                        width: 7%;
+                        height: 25%;
+                    }
+
+                    @include mediaMd{
+                        width: 7%;
+                        height: 25%;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+// First Sectuion end--------------------------------------------------------------------
+
+// Second container start------------------------------------------------------------------
+
+.abt-second-section {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 7rem;
+    padding-top: 1rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL{
+        padding: 0 3rem 0 4rem;
+        height: 90vh;
+    }
+
+    @include mediaMd{
+        padding: 0 1rem 0 1rem;
+        height: 120vh;
+        flex-direction: column;
+    }
+
+    &-content {
+        display: flex;
+
+        @include mediaMd{
+            flex-direction: column;
+        }
+        div {
+            width: 50%;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0rem 3.5rem;
+            justify-content: space-around;
+            border-left: 1px solid grey;
+            border-right: 1px solid grey;
+
+            @include mediaL{
+                width: 50%;
+                height: 60vh;
+                padding: 0rem 1rem;
+            }
+
+            @include mediaMd{
+                width: 100%;
+                height: 50vh;
+                padding: 0rem 1rem;
+            }
+
+            span{
+                width:20%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            p {
+                font-size: 1.3rem;
+                padding-bottom: 0;
+                font-family: sans-serif;
+                letter-spacing: normal;
+                line-height: 1.4;
+                margin: 0;
+                text-align: left;
+
+                @include mediaL{
+                    font-size: 1rem;
+                }
+
+                @include mediaMd{
+                    font-size: 1rem;
+                    margin-top: -2rem;
+                }
+            }
+            h1 {
+                text-align: left;
+                font-family: sans-serif;
+                padding: 0%;
+                margin: 0;
+                font-weight: 400;
+                color: rgb(77, 115, 116);
+
+                font-size: 3.5rem;
+
+                @include mediaL{
+                    font-size: 2.5rem;
+                }
+
+                @include mediaMd{
+                    font-size: 2.5rem;
+                }
+            }
+            pre {
+                color: rgb(6, 6, 6);
+                text-decoration: none;
+                font-size: 0.7rem;
+                font-weight: 600;
+                letter-spacing: 0.6px;
+                text-align: left;
+                font-family: sans-serif;
+
+                @include mediaL{
+                    display: none;
+                    width: 100%;
+                    line-height: 1.5;
+                    font-size: 0.5rem;
+                    padding: 0;
+                }
+
+
+                @include mediaMd{
+                    display: none;
+                    
+                }
+            }
+        }
+    }
+}
+// Second container end------------------------------------------------------------------
+
+// Third container start------------------------------------------------------------------
+
+.abt-third-section {
+    background-color: rgb(224, 225, 226);
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL{
+        height: 50vh;
+    }
+
+    @include mediaMd{
+        height: 50vh;
+    }
+
+    &-left {
+        width: 75%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0rem 7rem;
+
+        @include mediaL{
+            // width: 7%;
+            height: 100%;
+            padding: 0rem 3rem;
+        }
+
+        @include mediaMd{
+            width: 100%;
+            height: 100%;
+            padding: 0rem 1rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 550;
+            text-align: left;
+            padding-bottom: 2rem;
+            color: rgb(77, 115, 116);
+            text-transform: uppercase;
+            line-height: 1.5;
+            font-family: sans-serif;
+
+            @include mediaL{
+                font-size: 2.5rem;
+            }
+
+            @include mediaMd{
+                font-size: 2.5rem;
+            }
+        }
+        p {
+            font-size: 2.5rem;
+            padding: 0 2rem 0 11rem;
+            letter-spacing: normal;
+            line-height: 1.2;
+            margin: 0;
+            font-weight: 400;
+            text-align: left;
+
+            @include mediaL{
+                font-size: 1.5rem;
+                padding: 0 2rem 0 3rem;
+            }
+
+            @include mediaMd{
+                font-size: 1.5rem;
+                padding: 0 1rem 0 1rem;
+            }
+        }
+    }
+    &-right {
+        background-color: rgb(168, 168, 168);
+       background-image: url("../../Image/about-pattern.png");
+         background-repeat: no-repeat;
+            background-size: cover;
+        width: 25%;
+        height: 100%;
+    }
+}
+
+// Third container end------------------------------------------------------------------
+
+// Fourth container start------------------------------------------------------------------
+.abt-fourth-section {
+    background-color: rgb(255, 255, 255);
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 0rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL{
+        height: 80vh;
+    }
+
+    @include mediaMd{
+        height: 120vh;
+        padding-bottom: 0;
+    }
+    h1 {
+        padding-left: 7rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 2rem;
+        color: rgb(77, 115, 116);
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-family: sans-serif;
+
+        @include mediaL{
+            padding-left: 3rem;
+            font-size: 2.5rem;
+        }
+
+        @include mediaMd{
+            padding-left: 1rem;
+            padding-bottom: 0;
+            font-size: 2.5rem;
+        }
+    }
+
+    &-content {
+        display: flex;
+        height: 70vh;
+        width: 100%;
+
+        @include mediaL{
+            height: 100vh;
+        }
+
+        @include mediaMd{
+            height: 100vh;
+            padding: 0 1rem;
+
+            flex-direction: column-reverse;
+        }
+
+        &-left {
+            width: 10%;
+            height: 100%;
+            padding: 4rem 0;
+
+            @include mediaL{
+                width: 7%;
+                height: 100%;
+                padding: 0;
+            }
+
+            @include mediaMd{
+                display: none;
+            }
+            div{
+                width: 100%;
+                height: 100%;
+                background-image: url("../../Image/about-pattern2.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+        }
+        &-middle {
+            width: 50%;
+            height: 100%;
+
+            @include mediaMd{
+                width: 100%;
+                padding: 2rem 0;
+                height: auto;
+            }
+
+            &-1,&-2,&-3,&-4{
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-bottom: 4rem;
+
+                @include mediaL{
+                    padding-bottom: 2rem;
+                }
+
+                @include mediaMd{
+                    padding-bottom: 1rem;
+                }
+                span{
+                    width: 40%;
+                    font-size: 2rem;
+                    font-weight: 500;
+                    text-align: left;
+                    padding-left: 7rem;
+                    color: rgb(77, 115, 116);
+                    text-transform: uppercase;
+                    line-height: 1.5;
+                    font-family: sans-serif;
+
+                    @include mediaL{
+                        padding-left: 3rem;
+                        font-size: 1.5rem;
+                    }
+
+                    @include mediaMd{
+                        padding-left: 1rem;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                div{
+                    width: 60%;
+                    display: flex;
+                    padding: 0 10rem 0 1em;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+
+                    @include mediaL{
+                        padding: 0 3rem 0 1em;
+                    }
+
+                    @include mediaMd{
+                        padding: 0 1rem 0 1em;
+                    }
+
+                    h1{
+                        font-size: 2rem;
+                        font-weight: 550;
+                        text-align: left;
+                        padding:0;
+                        margin: 0;
+                        color: rgb(77, 115, 116);
+                        text-transform: uppercase;
+                        line-height: 1.5;
+                        font-family: sans-serif;
+
+                        @include mediaL{
+                            font-size: 1.5rem;
+                        }
+
+                        @include mediaMd{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    p{
+                        font-size: .8rem;
+                        letter-spacing: normal;
+                        line-height: 1.2;
+                        margin: 0;
+                        font-weight: 500;
+                        padding: 0;
+                        text-align: left;
+
+                        @include mediaL{
+                            font-size: .7rem;
+                        }
+
+                        @include mediaMd{
+                            font-size: .7rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+        &-right {
+            width: 40%;
+            height: 100%;
+            background-image: url("../../Image/about-img.png");
+            background-size:contain;
+            background-position: top;
+            background-repeat: no-repeat;
+
+            @include mediaL{
+                background-size: cover;
+                
+            }
+
+            @include mediaMd{
+                width: 100%;
+                height:50vh;
+                background-size: cover;
+            }
+        }
+    }
+}
+// Fourth container end------------------------------------------------------------------
+
+// Fifth container start------------------------------------------------------------------
+.abt-fifth-section {
+    background-color: rgb(224, 225, 226);
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 0rem;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+
+    @include mediaL{
+        height: 50vh;
+    }
+
+    @include mediaMd{
+        height: 90vh;
+        padding-bottom: 0;
+    }
+    h1 {
+        padding-left: 7rem;
+        font-size: 3.5rem;
+        font-weight: 600;
+        text-align: left;
+        padding-bottom: 2rem;
+        color: rgb(77, 115, 116);
+        text-transform: uppercase;
+        line-height: 1.5;
+        font-family: sans-serif;
+
+        @include mediaL{
+            padding-left: 3rem;
+            font-size: 2rem;
+        }
+
+        @include mediaMd{
+            padding-left: 1rem;
+            padding-bottom: 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+    &-content {
+        display: flex;
+        height: 25vh;
+        padding: 0 4rem;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        @include mediaL{
+            padding:0  2rem;
+        }
+
+        @include mediaMd{
+            padding: 2rem 1rem;
+            flex-direction: column;
+            height: 70vh;
+            justify-content: space-around;
+        }
+
+        div {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-right: 2px solid rgb(77, 115, 116);
+            justify-content: center;
+
+            @include mediaMd{
+                width: 10   0%;
+                border-right: none;
+            }
+
+            span {
+                font-size: 2rem;
+                font-weight: 0;
+                opacity: 0.6;
+                text-align: left;
+                color: rgb(77, 115, 116);
+                text-transform: uppercase;
+                line-height: 1.5;
+
+                @include mediaL{
+                    font-size: 1.5rem;
+                }
+
+                @include mediaMd{
+                    font-size: 1.5rem;
+                }
+            }
+            h4 {
+                font-size: 2rem;
+                font-weight: 400;
+                color: rgb(77, 115, 116);
+                text-transform: uppercase;
+                line-height: 1.5;
+                font-family: sans-serif;
+
+                @include mediaL{
+                    font-size: 1.5rem;
+                }
+
+                @include mediaMd{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        #last {
+            border: none;
+        }
+    }
+}

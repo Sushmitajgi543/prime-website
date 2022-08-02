@@ -1,0 +1,317 @@
+@import "mixin";
+
+// First Sectuion start
+.cnt-first-section {
+    background-image: url("../../Image/contact-hero.png");
+
+    height: 85vh;
+    background-size: cover;
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: flex;
+    @include mediaL{
+        height: 60vh;
+        background-size: contain;
+    }
+
+    @include mediaMd{
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+}
+// First Sectuion end--------------------------------------------------------------------
+
+// Second Sectuion start
+.cnt-second-section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 4rem 0rem;
+    justify-content: center;
+    align-items: center;
+
+    @include mediaL{
+        padding: 1rem 0rem;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    @include mediaMd{
+        padding: 1rem 0rem;
+        height: 90vh;
+        flex-direction: column;
+    }
+
+    &-left{
+        width: 50%;
+        height: 100%;
+        padding:0 5rem 0 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        @include mediaL{
+            width: 100%;
+            padding: 0;
+            height: 40%;
+            align-items: center;
+        }
+
+        @include mediaMd{
+            width: 100%;
+            padding: 0;
+            height: 40%;
+            align-items: center;
+        }
+
+        h1{
+            padding-left: 7rem;
+            font-size: 7rem;
+            text-align: left;
+            font-family: sans-serif;
+            word-spacing: 1px;
+            letter-spacing: 0px;
+            color: rgb(77, 115, 116);
+
+            @include mediaL{
+                padding-left: 0;
+                text-align: center;
+                font-size: 3rem;
+            }
+
+            @include mediaMd{
+                padding-left: 0;
+                text-align: center;
+                font-size: 2rem;
+            }
+            
+        }
+        span{
+            height: 15%;
+            width: 70%;
+
+            @include mediaL{
+                display: none;
+            }
+
+            @include mediaMd{
+                display: none;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    &-right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        
+
+        @include mediaL{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mediaMd{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-form{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            @include mediaL{
+                width: 100%;
+                height: 90%;
+                align-items: center;
+            }
+
+            @include mediaMd{
+                width: 100%;
+                height: 90%;
+                align-items: center;
+            }
+
+            &-group{
+                width: 100%;
+                padding-left: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+                @include mediaL{
+                    margin: 0;
+                    padding: 0 3rem;
+                }
+
+                @include mediaMd{
+                    margin: 0;
+                    padding: 0 3rem;
+                }
+
+                input{
+                    width: 100%;
+                    padding: 2rem 0rem;
+                    padding-bottom: 0.2rem;
+                    font-size: 2rem;
+                    border: none;
+                    border-bottom: 1px solid rgb(215, 213, 213);
+                    
+                @include mediaL{
+                    font-size: 1.5rem;
+                    padding: 0;
+                    padding-left: .3rem;
+                } 
+
+                @include mediaMd{
+                    font-size: 1.5rem;
+                    padding: 0;
+                    padding-left: .3rem;
+                }
+                }
+                ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                    color: rgb(187, 186, 186);
+                    opacity: 1; /* Firefox */
+                    font-weight: 300;
+                  }
+                
+                button{
+                    padding: .7rem 3rem;
+                    font-size: 1.4rem;
+                    border: none;
+                    background-color: rgb(6,38,47);
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+// Second Sectuion end--------------------------------------------------------------------
+
+// Third Sectuion start
+
+.cnt-third-section{
+    height: 100vh;
+    width: 100%;
+    background-color: #86B8AE;
+    display: flex;
+    @include mediaL{
+        height: 80vh;
+    }
+
+    @include mediaMd{
+        height: 120vh;
+        flex-direction: column;
+    }
+   
+    &-left{
+        width: 60%;
+        padding: 4rem 0rem;
+        height: 100%;
+        display: flex;
+        padding-left: 7rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        @include mediaL{
+            width: 50%;
+            padding: 0 2rem;
+        }
+
+        @include mediaMd{
+            width: 100%;
+            padding: 1rem 2rem;
+        }
+        
+        color: rgb(249, 252, 252);
+        div{
+            display: flex;
+            align-items: flex-start;
+            font-size: 1.5rem;
+            font-weight: 600;
+            justify-content: space-around;
+        }
+        h1{
+            font-size: 5rem;
+            text-align: left;
+            word-spacing: 1;
+            font-family: sans-serif;
+
+            @include mediaL{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            @include mediaMd{
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            
+        }
+        span{
+            padding-right: 6rem;
+
+            @include mediaL{
+                padding-right: 2rem;
+            }
+
+            @include mediaMd{
+                padding-right: 2rem;
+            }
+        }
+        p{
+            text-align: left;
+            font-family: sans-serif;
+
+            word-spacing: 1;
+            padding-right: 1rem;
+
+            @include mediaL{
+                font-size: 1.1rem;
+                padding-right: 0;
+            }
+
+            @include mediaMd{
+                font-size: 1.1rem;
+                padding-right: 0;
+            }
+        }
+    }
+    &-right{
+        width: 40%;
+        height: 100%;
+        background-color: honeydew;
+        display: flex;
+        
+        @include mediaL{
+            width: 50%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include mediaMd{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+}
