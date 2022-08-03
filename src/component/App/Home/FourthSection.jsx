@@ -1,12 +1,33 @@
-import React from 'react';
+import {React,useRef,useEffect} from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import tree from "../../Assest/Image/tree.jpg";
 import quality from "../../Assest/Image/quality.png";
 import trust from "../../Assest/Image/trust.png";
 import commintment from "../../Assest/Image/commintment.png";
 import excellence from "../../Assest/Image/excellence.png";
 export const FourthSection = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.fourth-section',
+                start: 'center bottom'}
+            })
+            .fromTo(".fourth-section h1", {x:-300, opacity: 0},{
+                x:0,opacity: 1, duration: 1.5, ease: 'power1.inOut'
+            })
+            
+            .fromTo(".fourth-section-left-content div ",{ y: '50',opacity: 0 },
+            {stagger:.3,  y: 10, opacity: 1, ease: 'back.out(1.7)',delay:0, duration: 1});
+
+    })
     return (
-        <div className="fourth-section">
+        <div ref={t1}   className="fourth-section">
             <h1>OUR BENCHMARKS</h1>
             <section>
 

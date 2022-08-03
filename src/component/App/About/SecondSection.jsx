@@ -1,9 +1,27 @@
-import React from 'react';
-
+import { React, useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import vision from '../../Assest/Image/vision.png';
 import mission from '../../Assest/Image/mission.png';
 
 export const SecondSection = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.abt-second-section',
+                start: 'center bottom'
+            }
+        })
+            
+
+            .fromTo(".abt-second-section-content div ",{ y: '100',opacity: 0 },
+            {stagger:.7,  y: 10, opacity: 1, ease: 'back.out(1.7)',delay:0, duration: 1.6});
+    })
     return (
         <div className='abt-second-section'>
             <div className='abt-second-section-content'>

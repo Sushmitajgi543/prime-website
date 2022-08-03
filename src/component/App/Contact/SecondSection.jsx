@@ -1,6 +1,29 @@
-import React from 'react';
+import { React, useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import contactpattern from '../../Assest/Image/contact-pattern.png';
 export const SecondSection = () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+    const eleRef = useRef();
+    const t1 = useRef();
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        t1.current = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.cnt-second-section',
+                start: 'top center'
+            }
+        })
+            
+            .fromTo(".cnt-second-section h1", { x: -200, opacity: 0 }, {
+                x: 0, opacity: 1, duration: 1, ease: 'power1.inOut'
+            })
+
+            .fromTo(".cnt-second-section-right-form-group",{ y: '100',opacity: 0 },
+            {stagger:.7,  y: 10, opacity: 1, ease: 'back.out(1.9)',delay:0, duration: 1})
+    })
     return (
         <div className="cnt-second-section">
             <div className="cnt-second-section-left">

@@ -1,12 +1,29 @@
-import React from 'react';
+import { React, useRef, useEffect } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import projectImg from '../../Assest/Image/project-img.png';
 export const FirstSection = () => {
+
+    const eleRef = useRef();
+
+    const q = gsap.utils.selector(eleRef);
+    useEffect(() => {
+        gsap.fromTo(".pj-first-section h1", { x: 300, opacity: 0 }, {
+            x: 0, opacity: 1, duration: 1, ease: 'power1.inOut', delay: 0.3
+        })
+        gsap.fromTo(".pj-first-section h2", { x: -300, opacity: 0 }, {
+            x: 0, opacity: 1, duration: 1.5, ease: 'power1.inOut', delay: 1
+        })
+        gsap.fromTo("hr", { x: 300, opacity: 0 }, {
+            x: 0, opacity: 1, duration: 2, ease: 'power1.inOut', delay: 0.3
+        })
+    })
     return (
 
-        <div className="pj-first-section">
+        <div ref={eleRef} className="pj-first-section">
             <div className="pj-first-section-left">
                 <div className="pj-first-section-left-top">
-                 <img src={projectImg} alt="" />
+                    <img src={projectImg} alt="" />
                 </div>
                 <div className="pj-first-section-left-middle">
                     <div>
