@@ -22,7 +22,7 @@ export const FirstContainer = () => {
                 <div>
                     <Link to="/"><img src={logo} alt="" /></Link>
                 </div>
-                <h1>We Bulid Great Homes</h1>
+                <h1>We Build Great Homes</h1>
             </div>
             <div className='hero-section-menu'>
                 <hr />
